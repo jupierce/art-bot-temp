@@ -471,6 +471,10 @@ def respond(**payload):
         raise
 
 
+if not os.environ.get('SLACK_API_TOKEN', None):
+    print('You must export SLACK_API_TOKEN into the environment. You can find this in bitwarden.')
+    exit(1)
+
 slack_token = os.environ["SLACK_API_TOKEN"]
 rtm_client = slack.RTMClient(token=slack_token, auto_reconnect=True)
 rtm_client.start()
