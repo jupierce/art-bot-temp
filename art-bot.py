@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 
-from collections import namedtuple
 import os
 import slack
 import pprint
@@ -19,7 +18,7 @@ import traceback
 
 MONITORING_CHANNEL = 'GTDLQU9LH'  # art-bot-monitoring
 BOT_FRIENDLY_CHANNELS = 'GDBRP5YJH'  # channels we allow the bot to talk directly in instead of DM'ing user back
-BOT_ID = 'UD5JGDRC5'
+BOT_ID = 'UTHKYT7FB'
 AT_BOT_ID = f'<@{BOT_ID}>'
 
 logger = logging.getLogger()
